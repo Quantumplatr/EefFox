@@ -27,7 +27,7 @@
 
 /* Hide sidebar border */
 #sidebar-splitter {
-  border: none;
+  opacity: 0;
 }
 
 /* Hide toolbar border */
