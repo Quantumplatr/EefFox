@@ -22,7 +22,8 @@
 
 /* Hide bookmarks */
 #PersonalToolbar {
-  visibility: collapse;
+/*   visibility: collapse; */
+  /* TODO: figure out custom slide out functionality or just use on new tab */
 }
 
 /* Hide sidebar border */
@@ -33,4 +34,39 @@
 /* Hide toolbar border */
 #navigator-toolbox {
   border: none !important;
+  position: relative; /* For bookmark positioning */
+}
+
+/* Ref: https://github.com/datguypiko/Firefox-Mod-Blur/blob/master/EXTRA%20MODS/Bookmarks%20Bar%20Mods/Transparent%20bookmarks%20bar/transparent_bookmarks_bar.css */
+
+/* Hide bookmarks by default */
+#PersonalToolbar:not([customizing]) {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  max-width: fit-content;
+  border-radius: 0px 0px 8px 8px;
+  
+  /* Center bookmakrs */
+  width:100vw;
+  align-self:center; 
+  
+  /*  Animate open/close  */ 
+  --bookmark-slide-duration: 0.3s; /* Duration for closing */
+  transition: transform var(--bookmark-slide-duration) ease-in-out !important;
+  transition-delay: 100ms !important; /* Delay for closing */
+  transform: translateY(0%);
+  transform-origin: top;
+}
+
+/* Show bookmarks on hover */
+#navigator-toolbox:hover #PersonalToolbar:not([customizing]) {
+  transform: translateY(100%);
+  --bookmark-slide-duration: 0.2s; /* Duration for opening */
+  transition-delay: 0ms !important; /* Delay for opening */
+}
+
+/* Put nav bar above bookmarks */
+#nav-bar {
+  z-index: 2 !important;
 }
