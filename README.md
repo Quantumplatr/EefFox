@@ -172,7 +172,7 @@ The important things to me are:
 
 ## Firefox Colors
 
-I have exported my colors [here]("Firefox Colors"/theme.zip). To automatically import
+I have exported my colors [here](<Firefox Colors/theme.zip>). To automatically import
 them, I need to do some other things. I will update this when I figure it out.
 
 You can unzip it and look at the `manifest.json` for the color values.
