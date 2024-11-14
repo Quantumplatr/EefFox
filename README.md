@@ -42,6 +42,9 @@
 My Firefox setup
 Intended to look similar to Arc
 
+![image](https://github.com/user-attachments/assets/f96306a4-f607-4af4-8d68-4bd7f7a6033d)
+
+
 ## FirefoxCSS Setup
 
 [Here](https://mrotherguy.github.io/ToyfoCSS/) is a good, thorough FirefoxCSS tutorial.
