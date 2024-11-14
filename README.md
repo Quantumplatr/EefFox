@@ -33,6 +33,7 @@
     * [YouTube High Definition](#youtube-high-definition)
 * [Sidebery Setup](#sidebery-setup)
 * [Firefox Colors](#firefox-colors)
+* [Toolbar](#toolbar)
 
 <!-- mtoc-end -->
 
@@ -176,3 +177,9 @@ I have exported my colors [here](<Firefox Colors/theme.zip>). To automatically i
 them, I need to do some other things. I will update this when I figure it out.
 
 You can unzip it and look at the `manifest.json` for the color values.
+
+## Toolbar
+
+![image](https://github.com/user-attachments/assets/60a29190-0783-468a-9f78-bfc23f3f8eb8)
+Here is how I have my toolbar customized. The minimize, open, and close buttons on the right
+are from extensions mentioned above. I belive they can be done using CSS but I haven't tried.
